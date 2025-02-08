@@ -1,4 +1,4 @@
-import { drizzle } from "drizzle-orm/libsql";
+import { drizzle } from "drizzle-orm/singlestore";
 import { createPool, type Pool } from "mysql2/promise";
 
 import { env } from "~/env";
@@ -23,7 +23,6 @@ const conn =
     ssl: {},
     maxIdle: 0,
   });
-
 if (env.NODE_ENV !== "production") globalForDb.conn = conn;
 
 conn.addListener("error", (err) => {
