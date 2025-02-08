@@ -1,4 +1,4 @@
-import { primaryKey } from "drizzle-orm/mysql-core";
+import "server-only";
 import {
   int,
   text,
