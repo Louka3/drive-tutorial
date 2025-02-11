@@ -6,7 +6,7 @@ import { FileRow, FolderRow } from "./fileRow";
 import type { files_table, folders_table } from "~/server/db/schema";
 import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import { UploadButton } from "../components/uploadthing";
+import { UploadButton } from "../../../components/uploadthing";
 import { useRouter } from "next/navigation";
 
 export default function DriveContents(props: {
