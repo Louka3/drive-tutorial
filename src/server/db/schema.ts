@@ -23,6 +23,7 @@ export const files_table = createTable(
     name: text("name").notNull(),
     size: int("size").notNull(),
     url: text("url").notNull(),
+    // fileKey: text("file_key").notNull(),  // this would be the correct way to get the key for a specific image for uploadThing. Makes writing functions like "delete" easier if you have access to the file key. current delete in this project is a janky work-around
     parent: bigint("parent", { mode: "number", unsigned: true }).notNull(),
     createdAt: timestamp("created_at").notNull().defaultNow(),
   },

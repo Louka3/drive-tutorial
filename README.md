@@ -8,5 +8,11 @@
 - [x] Add file uploading
 - [x] Add analytics
 - [x] Make sure sort order is consistent
-- [ ] Add delete
+- [x] Add delete on files
 - [ ] Real homepage + onboarding
+
+## Fun follow ups
+
+### Folder deletetions
+
+Make sure you fetch all of the folders that have it as a parent, and their children too. Then delete them all in one batch.
